@@ -6,7 +6,7 @@
 #    By: thbernar <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/11/07 17:30:38 by thbernar          #+#    #+#              #
-#    Updated: 2017/11/20 11:38:15 by thbernar         ###   ########.fr        #
+#    Updated: 2017/12/21 13:04:07 by thbernar         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,6 +76,7 @@ SRCS = ft_atoi.c \
 	   ft_strrev.c \
 	   ft_strtolower.c \
 	   ft_isprime.c \
+	   get_next_line.c
 
 
 OBJS = $(SRCS:.c=.o)

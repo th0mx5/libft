@@ -6,15 +6,21 @@
 /*   By: thbernar <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/07 17:50:51 by thbernar          #+#    #+#             */
-/*   Updated: 2017/11/20 11:36:46 by thbernar         ###   ########.fr       */
+/*   Updated: 2017/12/21 13:03:55 by thbernar         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_LIBFT_H
 # define FT_LIBFT_H
+# define BUFF_SIZE 1
 
 # include <unistd.h>
 # include <stdlib.h>
+# include <fcntl.h>
+# include <sys/types.h>
+# include <sys/stat.h>
+# include <fcntl.h>
+# include <limits.h>
 
 typedef struct		s_list
 {
@@ -89,5 +95,7 @@ int					ft_strisnumeric(const char *str);
 char				*ft_strcapitalize(char *str);
 char				*ft_strtolower(char *str);
 int					ft_isprime(int nb);
+
+int			get_next_line(const int fd, char **line);
 
 #endif
